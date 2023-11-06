@@ -11,21 +11,43 @@
     <meta name="Ben Wellington"/>
 </head>
 <body>
-    <div class="main-container">
-        <header class="flex inline-flex">
-            <div class="social-media-icons border flex center">
-                <img src="../images/github_icon.png" alt="Github">
-                <img src="../images/twitter_icon.png" alt="Twitter">
-                <img src="../images/linkedin_icon.png" alt="LinkedIn">
+    <header class="flex space-between">
+        <div class="social-media-icons flex space-between">
+            <img src="../images/github_icon.png" alt="Github">
+            <img src="../images/twitter_icon.png" alt="Twitter">
+            <img src="../images/linkedin_icon.png" alt="LinkedIn">
+        </div>
+        <nav class="flex center">
+            <ul class="flex full-width space-between">
+                <li><a href="#"><span class="apricot">1.</span> Skills</a></li>
+                <li><a href="#"><span class="apricot">2.</span> Experience</a></li>
+                <li><a href="#"><span class="apricot">3. </span> Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex center">
+        <section class="introductory-message">
+            <h1>Welcome.</h1>
+            <h2>My name is <span class="apricot">Ben Wellington,</span></h2>
+            <h2>and I am a <span class="apricot">full-stack developer.</span></h2>
+            <div class="svg-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="200" height="9" viewBox="0 0 204 9" fill="none">
+                    <path d="M203.604 4.52444L199.995 0.915998L196.387 4.52444L199.995 8.13288L203.604 4.52444ZM-0.00476074 5.14944H199.995V3.89944H-0.00476074V5.14944Z" fill="#FABD6B"/>
+                </svg>
             </div>
-            <nav class="border flex">
-                <ul class="">
-                    <li><a href="#">1. Skills</a></li>
-                    <li><a href="#">2. Experience</a></li>
-                    <li><a href="#">3. Resume</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
+            <div class="about-me">
+                <p>Born in Gloucester, United Kingdom, I am a cyber security student in the second year of my Bachelor's Degree. I have a passion for creating robust and secure digital solutions.</p>
+                <p>Join me on my pursuit of a safer, more delightful digital world</p>
+            </div>
+            <div class="project-links full-width flex apricot">
+                <div class="svg-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="15" viewBox="0 0 32 16" fill="none">
+                        <path d="M31.7071 8.70711C32.0976 8.31658 32.0976 7.68342 31.7071 7.29289L25.3431 0.928932C24.9526 0.538408 24.3195 0.538408 23.9289 0.928932C23.5384 1.31946 23.5384 1.95262 23.9289 2.34315L29.5858 8L23.9289 13.6569C23.5384 14.0474 23.5384 14.6805 23.9289 15.0711C24.3195 15.4616 24.9526 15.4616 25.3431 15.0711L31.7071 8.70711ZM0 9H31V7H0V9Z" fill="#FABD6B"/>
+                    </svg>
+                </div>
+                <p>See my projects</p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

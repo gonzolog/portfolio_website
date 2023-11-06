@@ -1,14 +1,15 @@
-
-body {
+/* GLOBAL */
+html, body {
     background: linear-gradient(122deg, rgba(6, 6, 6, 0.30) 28.08%, rgba(6, 6, 6, 0.00) 69.35%), #083A2D;
+    background-attachment: fixed; 
+    height: 100%;  
+    margin: 0 auto;
+    max-width: 2500px;
+    font-family: 'Abhaya Libre', serif;
+    color: #FFF;
 }
 
-.main-container {
-    margin: 0 auto;
-    font-family: 'Abhaya Libre', serif;
-    max-width: 1920px;
-}
-/* Reusables */
+/* REUSABLES */
 .flex {
 	display: flex;
 }
@@ -58,39 +59,86 @@ body {
 .end {
     justify-content: end;
 }
+.apricot {
+    color: #FABD6B;
+}
 
-
+/* HEADER SECTION */
 header {
     position: relative;
-    top: 10px;
+    top: 15px;
+    margin-inline: 2.5%;
+    align-items: center;
 }
-
-.social-media-icons {
-    max-width: 100%;
-    position: relative;
-    left: ;
+nav {
+    width: 17.5%;
 }
-.social-media-icons img {
-    width: 25px;
-    height: 25px;
-    flex-shrink: 0;
-    margin-inline: 5%;
+nav ul {
+    padding: 0;
 }
-
 nav li {
     display: inline;
+    font-size: 22.5px;
 }
-
-
 nav li a {
     text-decoration: none;
 }
+nav li a:visited {
+        color: #FFF;
+}
+nav li a:hover,
+nav li a:active {
+    color: #FABD6B;
+}
 
-nav {
-width: 450px;
-height: 36.753px;
-flex-shrink: 0;
-align-items: center;
-position: relative;
-left: 1600px;
+.social-media-icons {
+    width: 6%;
+}
+.social-media-icons img {
+    width: 25px;
+}
+
+/* MAIN SECTION */
+main {
+    position: relative;
+    top: 200px;
+}
+.introductory-message {
+    width: 25%;
+    font-size: 20px;
+}
+
+.introductory-message h1 {
+    font-size: 90px;
+    font-weight: 500;
+    margin-block: 0;
+}
+.introductory-message h2 {
+    font-size: 45px;
+    font-weight: 500;
+    margin-block: 2.5%;
+}
+.introductory-message h2:nth-child(2) {
+    margin-top: 0;
+}
+.svg-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: fit-content;
+}
+.stroke-2 {
+    stroke-width: 2;
+}
+.about-me {
+    width: 80%;
+}
+.about-me p:nth-child(2) {
+    margin-bottom: 1.5%;
+}
+.project-links {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.project-links .svg-container {
+    margin-right: 2%;
 }
