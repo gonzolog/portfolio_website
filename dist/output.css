@@ -193,6 +193,7 @@ main img:last-child {
 .contact-me {
   align-items: center;
   margin-left: 5%;
+  margin-block: 2%;
 }
 
 .banner h2 {
