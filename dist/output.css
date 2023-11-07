@@ -108,7 +108,7 @@ header {
 }
 nav {
   padding-inline: 7.5%;
-  width: 60%;
+  width: 57.5%;
   margin-block: 5%;
   height: 55px; 
   
@@ -148,6 +148,8 @@ nav li a:active {
   font-weight: 500;
   margin-block: 0;
   margin-left: 7.5%;
+  position: relative;
+  top: 30px;
 }
 .introductory-message h2 {
   font-size: 45px;
@@ -175,20 +177,18 @@ main {
 main img:last-child {
   align-self: flex-end;
   margin-bottom: 3.5%;
+  position: relative;
+  right: 2.5%;
 }
 
 .about-me p:nth-child(2) {
   margin-bottom: 1.5%;
 }
-.quotation-mark {
-  font-size: 150px;
-}
-.quotation-mark p {
-  margin-block: 0;
-}
 .contact-me .svg-container {
   margin-right: 2%;
 }
+
+
 
 .contact-me {
   align-items: center;
