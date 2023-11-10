@@ -28,6 +28,7 @@ body {
   width: 90%;
   margin: 0 auto;
   margin-block: 1.5%;
+  overflow: hidden;
 }
 
 .outer-container {
@@ -218,9 +219,6 @@ body {
     .intro-container {
       width: 100%;
     }
-    .intro-message h1 {
-      display: none;
-    }
     .intro-container h2 {
       font-size: 1.25rem;
     }
@@ -236,7 +234,6 @@ body {
     nav {
       width: 100%;
       margin-block: 5%;
-      display: none;
     }
     .about-me {
       width: 100%;
