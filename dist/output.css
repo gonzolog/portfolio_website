@@ -15,6 +15,7 @@ body {
   color: #FFF;
   font-size: 20px;
   font-family: 'Abhaya Libre', serif;
+  min-width: 290px;
 
 }
 *, :after, :before {
@@ -143,6 +144,7 @@ body {
   }
   .about-me p {
     margin-block: 1.5%;
+    color: #EEE;
   }
 
   .contact-me .svg-container {
@@ -180,6 +182,9 @@ body {
   .project h3,
   .project p {
     margin-block: 2.5%;
+  }
+  .project p {
+    color: #EEE;
   }
 
   .project div div:last-child {
@@ -234,7 +239,8 @@ body {
       width: 100%;
     }
     .project-container span {
-      font-size: 0.65rem;
+      font-size: 0.8rem;
+      margin-right: 3.5%;
     }
     .project div div:last-child {
       margin-top: 1.5%;
@@ -246,10 +252,12 @@ body {
     nav {
       width: 100%;
       margin-block: 5%;
-      height: 1.5rem;
+      height: 1.75rem;
     }
     nav li {
-      font-size: 0.7rem;
+      font-size: 0.8rem;
+      margin-inline: 7.5%;
+
     }
     .about-me {
       width: 100%;
@@ -295,7 +303,7 @@ body {
     .intro-message {
       display: flex;
       justify-content: center;
-      margin-bottom: 5%;
+      margin-bottom: 2.5%;
     }
     .intro-message svg {
       width: 80%;
@@ -306,15 +314,28 @@ body {
     .intro-message section {
       display: flex;
       justify-content: start;
-      margin-block: 2%;
+      align-items: center;
+      margin-bottom: 0;
       width: 100%;
     }
     .intro-container .social-media-icons {
       align-items: center;
+      justify-content: center;
       margin-inline: 3%;
     }
     .intro-container .social-media-icons img {
       width: 12.5px;
+      margin-block: 50%;
+    }
+    .title-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: fit-content;
+    }
+    .project h3,
+    .project p {
+      margin-block: 1.5%;
     }
   }
   @media only screen and (max-width: 232px) {
@@ -323,6 +344,14 @@ body {
     }
     .intro-message .svg-container {
       justify-content: start;
+    }
+  }
+  @media only screen and (max-width: 360px) {
+    nav li {
+      margin-inline: 5%;
+    }
+    nav {
+      width: 100%;
     }
   }
 
