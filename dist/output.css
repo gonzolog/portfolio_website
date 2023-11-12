@@ -70,14 +70,7 @@ body {
 
 /* INNER CONTAINER */
   /* INTRO CONTAINER */
-  main {
-  }
-  main img:last-child {
-    align-self: flex-end;
-    position: relative;
-    right: 10%;
-    margin-bottom: 2.5%;
-  }  
+
   .intro-message {
     display: grid;
   }
@@ -263,6 +256,17 @@ body {
     .contact-me svg {
       width: 75%;
     }
+    .outer-container .social-media-icons {
+      display: none;
+    }
+    .intro-message section {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+    .intro-container .social-media-icons {
+      align-items: center;
+    }
   }
 
   /* iPads and Tablets – 481px — 768px */
@@ -307,8 +311,11 @@ body {
 
 
 /* REUSABLES */
-.flex {
-  display: flex;
+  .flex {
+    display: flex;
+  }
+  .hidden {
+    display: none;
   }
   .column {
   flex-direction: column;

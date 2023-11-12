@@ -38,9 +38,11 @@ function updateIntroMessage() {
         });
         // Repostions nav bar to be ontop of the intro message
         flexContainer.insertBefore(nav, flexContainer.firstChild);
+        introMessage.querySelector('.social-media-icons').classList.remove("hidden")
+        // Remove hidden property for social media icons
+
 
         // Re align social media icons with intro message
-        document.querySelector('.social-media-icons').classList.add('column');
     } else {
         // Revert changes made for mobile
         if (h1Element) {
@@ -54,21 +56,11 @@ function updateIntroMessage() {
                 h2.innerHTML = 'and I am a <span class="apricot">full-stack developer.</span>';
             }
         });
-
+        introMessage.querySelector('.social-media-icons').classList.add("hidden")
 
     }
 }
 
-var flexContainer = document.querySelector('.flex.center.column');
-var socialMediaIcons = document.querySelector('.social-media-icons')
-var introContainer = document.querySelector('.intro-container');
-var innerContainer = document.querySelector('.inner-container')
-var outerContainer = document.querySelector('.outer-container')
-var mainContainer = document.querySelector('.main-container');
-var nav = document.querySelector('.transparent-overlay');
-var introMessage = document.querySelector('.intro-message');
-var destination = document.querySelector('.destination')
-introMessage.insertBefore(socialMediaIcons, introMessage.firstChild);
 
 window.addEventListener('load', updateIntroMessage);
 window.addEventListener('resize', updateIntroMessage);
