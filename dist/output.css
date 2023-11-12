@@ -42,6 +42,7 @@ body {
  justify-content: space-between;
  width: 95%;
  margin: 0 auto;
+ 
 }
 .intro-container {
  width: 50%;
@@ -61,7 +62,7 @@ body {
     top: 3%;
     width: 100%;
   }
-  .social-media-icons {
+  .outer-container .social-media-icons {
     width: 6%;
   }
   .social-media-icons img {
@@ -105,6 +106,7 @@ body {
     height: 3rem; 
     padding-inline: 2%;
     display: flex;
+    align-items: center;
   }
   nav ul {
     padding: 0;
@@ -142,9 +144,7 @@ body {
   .about-me p {
     margin-block: 1.5%;
   }
-  .about-me p:nth-child(2) {
-    margin-bottom: 1.5%;
-  }
+
   .contact-me .svg-container {
     margin-right: 2%;
   }
@@ -187,8 +187,9 @@ body {
     width: 70%
   }
   .banner {
-    width: 100%;
-    height: 5rem; 
+    width: 75%;
+    height: 3rem; 
+    margin-block: 2.5%;
     align-self: center;
   }
   .banner h2 {
@@ -200,74 +201,131 @@ body {
   }
 
 /* Media Queries */
-  /* For Mobile Devices – 320px — 480px */
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
+  /* For Mobile Devices 480px */
+  @media only screen and (max-width: 480px) {
+    body {
+      font-size: 15px;
+    }
     .main-container {
-      width: 95%;
+      width: 100%;
       margin-block: 5%;
+      margin-inline: 0;
     }
     .inner-container {
       flex-direction: column;
-      width: 80%;
+      width: 85%;
     }
     .intro-container {
       width: 100%;
+      margin-bottom: 10%;
     }
     .intro-container h2 {
-      font-size: 1.25rem;
+      font-size: 1.75rem;
+      line-height: 95%;
     }
     .outer-container {
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .project-container {
       width: 100%;
     }
+    .project-container span {
+      font-size: 0.65rem;
+    }
+    .project div div:last-child {
+      margin-top: 1.5%;
+    }
     .project {
       flex-direction: column;
+      margin-block: 4%;
     }
     nav {
       width: 100%;
       margin-block: 5%;
-      height: 2rem;
+      height: 1.5rem;
     }
     nav li {
-      font-size: 1rem;
+      font-size: 0.7rem;
     }
     .about-me {
       width: 100%;
-      font-size: 0.95rem;
     }
     .about-me p {
-      margin-block: 4%;
+      margin-block: 2.5%;
+    }
+    .banner {
+      width: 95%;
+      height: 2rem; 
+      margin-block: 0 2%;
     }
     .banner h2 {
-      font-size: 1.4rem;
+      font-size: 1.25rem;
       padding-inline: 15%;
+    }
+    .project h3 {
+      font-size: 1.25rem;
     }
     .project-container img {
       display: none;
     }
     .contact-me .svg-container {
-      margin-right: 1%;
+      margin-right: 0;
     }
     .contact-me {
       left: 0;
       font-size: 0.95rem;
+      width: 100%;
+      font-size: 0.75rem;
+      margin-left: 5%;
     }
     .contact-me svg {
-      width: 75%;
+      width: 50%;
+    }
+    .contact-me p {
+      position: relative;
+      right: 4%;
     }
     .outer-container .social-media-icons {
       display: none;
     }
+    .intro-message {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 5%;
+    }
+    .intro-message svg {
+      width: 80%;
+    }
+    .intro-message .svg-container {
+      justify-content: center;
+    }
     .intro-message section {
       display: flex;
-      justify-content: space-around;
+      justify-content: start;
+      margin-block: 2%;
       width: 100%;
     }
     .intro-container .social-media-icons {
       align-items: center;
+      margin-inline: 3%;
+    }
+    .intro-container .social-media-icons img {
+      width: 12.5px;
     }
   }
+  @media only screen and (max-width: 232px) {
+    .intro-container .social-media-icons {
+      display: none;
+    }
+    .intro-message .svg-container {
+      justify-content: start;
+    }
+  }
+
 
   /* iPads and Tablets – 481px — 768px */
   @media only screen and (min-width: 481px) and (max-width: 768px) {

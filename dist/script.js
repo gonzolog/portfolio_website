@@ -2,7 +2,7 @@
 // Categorise into (mobile, tablet, etc)
 function checkScreenWidth() {
     let screenWidth = window.innerWidth;
-    if (screenWidth >= 320 && screenWidth <= 480) {
+    if (screenWidth <= 480) {
         return 'mobile';
     } else if (screenWidth >= 481 && screenWidth <= 768) {
         return 'tablet';
@@ -57,7 +57,7 @@ function updateIntroMessage() {
             }
         });
         introMessage.querySelector('.social-media-icons').classList.add("hidden")
-
+        flexContainer.insertBefore(nav, flexContainer.lastChild);
     }
 }
 
