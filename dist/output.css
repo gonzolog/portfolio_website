@@ -52,8 +52,7 @@ body {
 .project-container {
   display: flex;
   flex-direction: column;
-  width: 35%;
-  margin: 0 auto;
+  width: 45%;
 }
 
 /* OUTER CONTAINER */
@@ -64,10 +63,11 @@ body {
     width: 100%;
   }
   .outer-container .social-media-icons {
-    width: 6%;
+    width: 100%;
   }
   .social-media-icons img {
     width: 25px;
+    margin-inline: 0.5%;
   }
 
 /* INNER CONTAINER */
@@ -102,7 +102,7 @@ body {
     align-items: center;
   }
   nav {
-    width: 45%;
+    width: 62.5%;
     margin-block: 2.5%;
     height: 3rem; 
     padding-inline: 2%;
@@ -115,6 +115,7 @@ body {
   nav li {
     display: inline;
     font-size: 1.25rem;
+    margin-inline: 5%;
   }
   nav li a {
     text-decoration: none;
@@ -161,17 +162,28 @@ body {
   .project-container img {
     border-radius: 2rem;  
     opacity: 0.25;
-    margin-inline: 5%;
+    margin-right: 5%;
   }
 
   .project-container span {
     padding-inline: 3.5%;
+    margin-right: 3.5%;
   }
 
   .project {
-    margin-block: 2.5%;
     display: flex;
     flex-direction: row;
+    align-self: center;
+    width: 80%;
+    padding-block: 2.5%;
+    padding-inline: 2.5%;
+  }
+  .project .flex.column {
+    justify-content: center;
+  }
+  .project:hover {
+    background: rgba(217, 217, 217, 0.05);
+    border-radius: 2rem;
   }
 
   .project h3 {
@@ -192,7 +204,7 @@ body {
     width: 70%
   }
   .banner {
-    width: 75%;
+    width: 50%;
     height: 3rem; 
     margin-block: 2.5%;
     align-self: center;
@@ -206,6 +218,26 @@ body {
   }
 
 /* Media Queries */
+  @media only screen and (max-width: 1450px) {
+    .intro-container {
+      width: 100%;
+    }
+    .inner-container {
+      flex-direction: column;
+      width: 90%;
+    }
+    nav {
+      width: 60%;
+    }
+    nav li {
+      margin-inline: 7.5%;
+    }
+    .project-container {
+      width: 100%;
+    }
+  }
+
+
   /* For Mobile Devices 480px */
   @media only screen and (max-width: 480px) {
     body {
@@ -248,6 +280,7 @@ body {
     .project {
       flex-direction: column;
       margin-block: 4%;
+      width: 100%;
     }
     nav {
       width: 100%;
@@ -350,29 +383,160 @@ body {
     nav li {
       margin-inline: 5%;
     }
-    nav {
-      width: 100%;
-    }
   }
 
 
   /* iPads and Tablets – 481px — 768px */
   @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .main-container {
+      width: 85%;
+      margin-block: 2.5%;
+    }
+    .intro-container {
+      width: 100%;
+      margin-bottom: 5%;
+    }
+    .intro-container h1 {
+      font-size: 5rem;
+      margin-bottom: 2.5%;
+    }
+    .intro-container h2 {
+      font-size: 2rem;
+    }
+    .inner-container {
+      flex-direction: column;
+      width: 100%;
+    }
+    .about-me {
+      margin-left: 0;
+      width: 90%;
+    }
+    .contact-me {
+      left: 5%;
+    }
+    nav {
+      width: 92.5%;
+    }
+    nav li {
+      margin-inline: 5%;
+    }
+    .project-container {
+      width: 100%;
+      align-items: center;
+    }
+    .project-container img {
+      display: none;
+    }
+    .banner {
+      width: 92.5%
+    }
+    .project {
+      width: 90%;
+    }
+    .project p {
+      margin-block: 1%;
+    }
+    .project h3 {
+      font-size: 1.75rem;
+    }
   }
 
   /* Laptops and small screen – 769px — 1024px */
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    body {
+    .intro-container {
+      width: 100%;
+      margin-bottom: 5%;
+    }
+    .intro-container h1 {
+      font-size: 5rem;
+      position: relative;
+      right: 10%
+    }
+    .project-container {
+      width: 100%;
+    }
+    .inner-container {
+      flex-direction: column;
+      width: 90%;
+    }
+    nav {
+      width: 85%;
+    }
+    nav li {
+      margin-inline: 7.5%;
+    }
+    .project img {
+      display: none;
+    }
+    .project p {
+      margin-block: 1%;
+    }
+    .project h3 {
+      font-size: 1.75rem;
+    }
+    .banner {
+      width: 85%;
     }
   }
 
   /* Large screens and Desktops – 1025px — 1200px */
-  @media only screen and (min-width: 1025px) and (max-width: 1200px) {
-
+  @media only screen and (min-width: 1025px) and (max-width: 1450px) {
+    .intro-container {
+      width: 100%;
+    }
+    .intro-container h1 {
+      font-size: 6rem;
+      margin-right: 35%;
+    }
+    .project-container {
+      width: 100%;
+    }
+    .inner-container {
+      flex-direction: column;
+      width: 90%;
+    }
+    nav {
+      width: 60%;
+    }
+    nav li {
+      margin-inline: 7.5%;
+    }
+    .project p {
+      margin-block: 1%;
+    }
+    .project h3 {
+      font-size: 1.75rem;
+    }
+    .banner {
+      width: 60%;
+    }
   }
 
-  /* TV and Extra Large Screens – 1201px and more */
-  @media only screen and (min-width: 1201px) {
+  @media only screen and (min-width: 1451px) and (max-width: 1718px) {
+    .project-container {
+      width: 40%;
+      display: grid;
+    }
+    .project {
+      width: 100%;
+    }
+    .project img {
+      /* display: none; */
+      width: 25%;
+      height: 25%;
+    }
+    .banner {
+      width: 70%;
+    }
+    .main-container {
+      width: 95%;
+    }
+  }
+  
+  @media only screen and (min-width: 1601px) and (max-width: 2559px) {
+    .banner {
+      width: 70%;
+    }
   }
 
 
