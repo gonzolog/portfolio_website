@@ -38,7 +38,7 @@ body {
   display: grid;
   flex-direction: column;
   position: relative;
-  width: 40%;
+  width: 45%;
   left: 10%;
 }
 
@@ -132,12 +132,10 @@ body {
     width: 25%;
     height: 25%;
   }
-
   .project-container span {
     padding-inline: 3.5%;
     margin-right: 3.5%;
   }
-
   .project {
     display: flex;
     flex-direction: row;
@@ -154,28 +152,25 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 2rem;
   }
-
-  .project h3 {
-    font-size: 1.5rem;
-    line-height: normal;
-  }
-
-  .project h3,
+  .banner,
   .project p {
     margin-block: 2.5%;
+  }
+  .project h3 {
+    font-size: 1.75rem;
+    line-height: normal;
+    margin-block: 0 1%;
   }
   .project p {
     color: #EEE;
   }
-
   .project div div:last-child {
-    margin-top: 5%;
+    margin-top: 1.5%;
     width: 70%
   }
   .banner {
-    width: 70%;
+    width: 70%; 
     height: 3rem; 
-    margin-block: 2.5%;
     align-self: center;
   }
   .banner h2 {
@@ -191,6 +186,7 @@ body {
   }
   footer p {
     font-size: 1rem;
+    color: #EEE;
   }
 
 /* MEDIA QUERIES */
@@ -441,6 +437,9 @@ body {
     .project-container {
       left: 0;
     }
+    .project-container span {
+      font-size: 1.125rem;
+    }
     .project img {
       display: none;
     }
@@ -469,6 +468,9 @@ body {
       flex-direction: column;
       width: 90%;
     }
+    .intro-container {
+      margin-bottom: 2.5%;
+    }
     .intro-container h1 {
       font-size: 6rem;
       right: 5%
@@ -481,6 +483,10 @@ body {
     }
     .project-container{
     left: 0;
+    }
+    .project {
+      justify-self: center;
+      padding-inline: 0;
     }
     .project p {
       margin-block: 1%;
