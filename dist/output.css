@@ -49,9 +49,11 @@ body {
     position: relative;
     top: 3%;
   }
+  .social-media-icons a {
+    margin-inline: 0.5%;
+  }
   .social-media-icons img {
     width: 25px;
-    margin-inline: 0.5%;
   }
 
 /* INNER CONTAINER */
@@ -561,6 +563,10 @@ body {
     }
     .project-container{
     left: 0;
+    }
+    .project-container a {
+      display: flex;
+      justify-content: center;
     }
     .project {
       justify-self: center;
