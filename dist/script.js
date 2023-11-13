@@ -7,7 +7,7 @@ function updateIntroMessage() {
     var flexContainer = introMessage.querySelector('.flex.center.column');
     var screenWidth = window.innerWidth;
 
-    if (screenWidth <= 538) {
+    if (screenWidth <= 998) {
         //Shorten intro message 
         h2Elements.forEach(function(h2) {
             if (h2.textContent.includes('Ben Wellington')) {
@@ -16,6 +16,7 @@ function updateIntroMessage() {
                 h2.textContent = 'Full-Stack Developer';
             }
         });
+        flexContainer.insertBefore(nav, flexContainer.firstChild);
     } else {
         // Revert changes made for mobile
         h2Elements.forEach(function(h2) {
@@ -25,11 +26,6 @@ function updateIntroMessage() {
                 h2.innerHTML = 'and I am a <span class="apricot">full-stack developer.</span>';
             }
         });
-    }
-    if (screenWidth <= 1024) {
-        // Repostions nav bar to be ontop of the intro message
-        flexContainer.insertBefore(nav, flexContainer.firstChild);
-    } else {
         flexContainer.insertBefore(nav, flexContainer.lastChild);
     }
 }
