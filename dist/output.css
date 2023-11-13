@@ -124,7 +124,12 @@ body {
     color: #EEE
   }
   .contact-me .svg-container {
-    margin-right: 2%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .contact-me svg {
+    margin-right: 1%;
   }
   .contact-me {
     align-items: center;
@@ -132,6 +137,10 @@ body {
     position: relative;
     left: 11%;
   }
+  .contact-me a {
+    width: 100%;
+  }
+
 
   /* PROJECT CONTAINER */
   .project-container img {
@@ -208,7 +217,6 @@ body {
       font-size: 15px;
     }
     .project-container span,
-    .contact-me,
     nav li {
       font-size: 0.8rem;
     }
@@ -281,17 +289,14 @@ body {
     } 
     .contact-me {
       left: 0;
-      margin-left: 2.5%;
+      justify-content: start;
+      font-size: 1rem;
     }
     .contact-me .svg-container {
       margin-right: 1%;
     }
     .contact-me svg {
-      width: 50%;
-    }
-    .contact-me p {
-      position: relative;
-      right: 4%;
+      margin-right: 2%;
     }
     .project-container {
       width: 100%;
@@ -569,9 +574,9 @@ body {
       justify-content: center;
     }
     .project {
-      justify-self: center;
       padding-inline: 2.5%;
       margin-bottom: 1%;
+      align-self: center;
     }
     .project p {
       margin-block: 1%;
