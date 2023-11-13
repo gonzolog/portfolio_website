@@ -1,6 +1,7 @@
 /* GLOBAL */
 html {
   scroll-behavior: smooth;
+  margin: 0 auto;
 }
 body {
   background: linear-gradient(109deg, rgba(0, 0, 0, 0.50) 41.93%, rgba(2, 2, 2, 0.34) 75.17%, rgba(6, 6, 6, 0.00) 101.98%), #083A2D;
@@ -8,7 +9,6 @@ body {
   color: #FFF;
   font-size: 20px;
   font-family: 'Abhaya Libre', serif;
-  min-width: 290px;
 
 }
 *, :after, :before {
@@ -21,6 +21,8 @@ body {
   margin: 0 auto;
   margin-block: 1.5%;
   overflow: hidden;
+  min-width: 290px;
+  max-width: 2560px;
 }
 
 .inner-container {
