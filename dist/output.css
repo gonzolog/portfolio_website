@@ -145,6 +145,7 @@ body {
     width: 80%;
     padding-block: 2.5%;
     padding-inline: 2.5%;
+    margin-bottom: 0.5%;
   }
   .project .flex.column {
     justify-content: center;
@@ -286,13 +287,15 @@ body {
       margin-top: 1.5%;
     }
     .project {
-      margin-bottom: 4%;
+      margin-bottom: 1%;
+      padding-block: 4%;
+      padding-inline: 4%;
       width: 100%;
     }
     .banner {
       width: 95%;
       height: 2rem; 
-      margin-block: 0 2%;
+      margin-block: 0 2.5%;
       justify-self: center;
     }
     footer p {
@@ -368,8 +371,10 @@ body {
       width: 100%;
       left: 0;
     }
-    .project-container img {
-      display: none;
+    .project {
+      justify-self: center;
+      width: 100%;
+      margin-bottom: 2.5%;
     }
     .project p {
       margin-block: 1%;
@@ -442,8 +447,10 @@ body {
     .project-container span {
       font-size: 1.125rem;
     }
-    .project img {
-      display: none;
+    .project {
+      width: 100%;
+      justify-self:  center;
+      margin-bottom: 2%;
     }
     .project p {
       margin-block: 1%;
@@ -488,7 +495,8 @@ body {
     }
     .project {
       justify-self: center;
-      padding-inline: 0;
+      padding-inline: 2.5%;
+      margin-bottom: 1%;
     }
     .project p {
       margin-block: 1%;
