@@ -26,7 +26,7 @@ function updateIntroMessage() {
             }
         });
     }
-    if (screenWidth <= 1000) {
+    if (screenWidth <= 1024) {
         // Repostions nav bar to be ontop of the intro message
         flexContainer.insertBefore(nav, flexContainer.firstChild);
     } else {
