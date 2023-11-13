@@ -29,5 +29,21 @@ function updateIntroMessage() {
         flexContainer.insertBefore(nav, flexContainer.lastChild);
     }
 }
+
+// Fn to update styling properites of current project div upon mouse event
+function updateProject(event) {
+    // Update h3 color to apricot
+    const h3Element = event.currentTarget.querySelector('h3');
+    h3Element.style.color = '#FABD6B';
+    // Update opacity of img
+    const imgElement = event.currentTarget.querySelector('img');
+    imgElement.style.opacity = 0.4;
+        // Event listener to remove styling properties once mouse leaves
+        event.currentTarget.addEventListener('mouseleave', function () {
+            h3Element.style.color = '#FFF';
+            imgElement.style.opacity = 0.25;
+        });
+}
+
 window.addEventListener('load', updateIntroMessage);
 window.addEventListener('resize', updateIntroMessage);
