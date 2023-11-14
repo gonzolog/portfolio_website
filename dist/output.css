@@ -49,19 +49,19 @@ body {
     position: relative;
     top: 3%;
   }
-  .social-media-icons a {
+  .outer-container .social-media-icons a {
     margin-inline: 0.25%;
   }
-  .social-media-icons img {
+  .outer-container .social-media-icons img {
     width: 30px;
     box-shadow: 5px 5px 7.5px rgba(0, 0, 0, 0.5);
     border-radius: 50%; /* Makes the element circular */
   }
-  .social-media-icons a {
+  .outer-container .social-media-icons a {
     padding-inline: 0.5%;
     padding-block: 0.5%;
   }
-  .social-media-icons a:hover {
+  .outer-container .social-media-icons a:hover {
     background: rgba(217, 217, 217, 0.05);
     box-shadow: 5px 5px 7.5px rgba(0, 0, 0, 0.2);
     border-radius: 2rem;
@@ -269,11 +269,8 @@ body {
       margin-inline: 3.5% 2.5%;
     }
     .intro-container .social-media-icons img {
-      width: 30px;
+      width: 15px;
       margin-block: 25%;
-    }
-    .intro-container .social-media-icons a {
-      padding-inline: 20%;
     }
     .intro-message {
       margin-bottom: 2.5%;
@@ -387,12 +384,9 @@ body {
       display: flex;
       margin-inline: 3.5% 2.5%;
     }
-    .intro-container .social-media-icons a {
-      padding-inline: 15%;
-    }
     .intro-container .social-media-icons img {
+      width: 17.5px;
       margin-block: 25%;
-      width: 32.5px;
     }
     .intro-container .flex.up.center {
       margin-top: 2.5%;
@@ -508,10 +502,7 @@ body {
     }
     .intro-container .social-media-icons img {
       margin-block: 25%;
-      width: 37.5px;
-    }
-    .intro-container .social-media-icons a {
-      padding-inline: 15%;
+      width: 22.5px;
     }
     .intro-container .social-media-icons {
       display: flex;
