@@ -266,7 +266,7 @@ body {
     }
     .intro-container .social-media-icons {
       display: flex;
-      margin-inline: 3.5%;
+      margin-inline: 3.5% 2.5%;
     }
     .intro-container .social-media-icons img {
       width: 30px;
