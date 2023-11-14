@@ -50,10 +50,21 @@ body {
     top: 3%;
   }
   .social-media-icons a {
-    margin-inline: 0.5%;
+    margin-inline: 0.25%;
   }
   .social-media-icons img {
-    width: 25px;
+    width: 30px;
+    box-shadow: 5px 5px 7.5px rgba(0, 0, 0, 0.5);
+    border-radius: 50%; /* Makes the element circular */
+  }
+  .social-media-icons a {
+    padding-inline: 0.5%;
+    padding-block: 0.5%;
+  }
+  .social-media-icons a:hover {
+    background: rgba(217, 217, 217, 0.05);
+    box-shadow: 5px 5px 7.5px rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
   }
 
 /* INNER CONTAINER */
@@ -253,16 +264,16 @@ body {
       font-size: 1.75rem;
       margin-block: 0;
     }
-    .intro-message h2:last-child {
-      font-size: 1.5rem;
-    }
     .intro-container .social-media-icons {
       display: flex;
       margin-inline: 3.5%;
     }
     .intro-container .social-media-icons img {
-      width: 15px;
+      width: 30px;
       margin-block: 25%;
+    }
+    .intro-container .social-media-icons a {
+      padding-inline: 20%;
     }
     .intro-message {
       margin-bottom: 2.5%;
@@ -368,16 +379,20 @@ body {
       display: none;
     }
     .intro-container h2 {
-      font-size: 2rem;
+      font-size: 2.25rem;
       margin-block: 0;
     }
+    
     .intro-container .social-media-icons {
       display: flex;
-      margin-inline: 3.5%;
+      margin-inline: 3.5% 2.5%;
+    }
+    .intro-container .social-media-icons a {
+      padding-inline: 15%;
     }
     .intro-container .social-media-icons img {
-      width: 17.5px;
       margin-block: 25%;
+      width: 32.5px;
     }
     .intro-container .flex.up.center {
       margin-top: 2.5%;
@@ -472,7 +487,7 @@ body {
       display: none;
     }
     .intro-message h2 {
-      margin-block: 0;
+      line-height: 1.25;
     }
     .intro-message section {
       margin-bottom: 1%;
@@ -493,11 +508,17 @@ body {
     }
     .intro-container .social-media-icons img {
       margin-block: 25%;
-      width: 22.5px;
+      width: 37.5px;
+    }
+    .intro-container .social-media-icons a {
+      padding-inline: 15%;
     }
     .intro-container .social-media-icons {
       display: flex;
-      margin-inline: 3.5%;
+      margin-inline: 3.5% 2.5%;
+    }
+    nav {
+      margin-bottom: 5%;
     }
     nav li {
       margin-inline: 7.5%;
@@ -544,6 +565,16 @@ body {
     nav,
     .banner {
       width: 60%;
+    }
+    .social-media-icons img {
+      width: 27.5px;
+    }
+    .social-media-icons a {
+      padding-inline: 0.75%;
+      padding-block: 0.75%;
+    }
+    .social-media-icons a {
+      margin-inline: 0.15%;
     }
     .inner-container {
       flex-direction: column;
@@ -601,6 +632,15 @@ body {
   @media only screen and (max-width: 360px) {
     nav li {
       margin-inline: 5%;
+    }
+    .intro-message h2 {
+      font-size: 1.5rem;
+    }
+    .intro-container .social-media-icons a {
+      padding-inline: 15%;
+    }
+    .intro-container .social-media-icons img {
+      width: 22.5px;
     }
   }
 
