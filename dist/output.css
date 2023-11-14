@@ -60,6 +60,8 @@ body {
   .outer-container .social-media-icons a {
     padding-inline: 0.5%;
     padding-block: 0.5%;
+    transition: 0.5s ease;
+    border-radius: 2rem;
   }
   .outer-container .social-media-icons a:hover {
     background: rgba(217, 217, 217, 0.05);
@@ -118,6 +120,7 @@ body {
   }
   nav li a {
     text-decoration: none;
+    transition: 0.5s ease;
   }
   nav li a:visited {
         color: #FFF;
@@ -173,6 +176,8 @@ body {
     padding-block: 2.5%;
     padding-inline: 2.5%;
     margin-bottom: 0.5%;
+    transition: 0.5s ease;
+    border-radius: 2rem;
   }
   .project .flex.column {
     justify-content: center;
